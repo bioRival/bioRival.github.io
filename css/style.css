@@ -1,0 +1,249 @@
+@font-face {
+    font-family: determination-rus;
+    src: url(../fonts/determination-rus.ttf);
+  }
+
+@font-face {
+    font-family: comic-sans;
+    src: url(../fonts/comic-sans-ms.ttf);
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: determination-rus;
+}
+
+#title_picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 700px;
+}
+
+#sans_picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
+#talk_bubble_container {
+    /* background-color: red; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 180px;
+}
+
+#textarea_container_inner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+
+textarea {
+    box-sizing: border-box;
+    width: 93%;
+    height: 150px;
+    margin: 0;
+    padding: 12px 20px;
+    border: 5px solid white;
+    border-radius: 0px;
+    background-color: black;
+    display: block;
+    float: left;
+
+    font-size: 16px;
+    resize: none;
+    color: white;
+    font-family: determination-rus;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.textarea_container {
+    height: 160px;
+    margin-top: 20px;
+}
+
+.hr_white_line {
+    visibility: collapse;
+    width: 50%;
+    border: 3px solid white;
+    /* border-radius: 5px; */
+}
+
+.send_button {
+    box-sizing: border-box;
+    width: 6%;
+    height: 150px;
+    margin: 0;
+    margin-left: 0.1%;
+    display: block;
+    float: right;
+
+    border: 5px solid white;
+    cursor: pointer;
+    appearance: none;
+    /* background-color: inherit; */
+    transition: transform .7s ease-in-out;
+    
+    background: url("../img/send_arrow.png") no-repeat;
+    background-size: 80% 25%;
+    background-position: center;
+    
+}
+
+.send_button:disabled {
+    filter: opacity(25%);
+}
+
+#mic_container {
+    /* background-color: red; */
+    display: inline-block;
+    width: 100%;
+}
+
+.mic_button_base {
+    min-width: 120px;
+    min-height: 120px;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    cursor: pointer;
+    appearance: none;
+}
+
+.mic_button {
+    border: 5px solid white;
+    border-radius: 50%;
+    
+    transition: transform .7s ease-in-out;
+    background: url("../img/mic_white.png") no-repeat;
+    background-size: 80% 80%;
+    background-position: center;
+}
+
+.mic_button:hover {
+    border: 5px solid rgb(17, 17, 17);
+    border-radius: 50%;
+
+    
+    background: url("../img/mic_black.png") no-repeat;
+    background-color: white;
+    background-size: 80% 80%;
+    background-position: center;
+}
+
+.mic_button_recording {
+    border: 5px solid white;
+    border-radius: 50%;
+
+    background-color: red;
+}
+
+.mic_button:disabled {
+    filter: opacity(25%);
+}
+
+.talk_bubble {
+    position: relative;
+    font-family: comic-sans;
+    text-align: start;
+    letter-spacing: 5px;
+    font-size: 18px;
+    line-height: 32px;
+    width: 300px;
+    min-height: 100px;
+    max-height: 100px;
+    background: #fff;
+    border-radius: 40px;
+    padding: 24px;
+    color: #000;
+}
+
+.talk_bubble-bottom-left:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #fff;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    left: 280px;
+    bottom: -24px;
+}
+
+.footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+}
+
+.footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+}
+
+.footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+}
+
+.footer .row a:hover{
+    color:#fff;
+}
+
+.footer .row ul{
+    width:100%;
+}
+
+.footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+}
+
+.footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+    #title_picture {
+        width: 95%;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) { 
+    #title_picture {
+        width: 95%;
+    }
+    #textarea_container_inner {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 480px) { 
+    #title_picture {
+        width: 95%;
+    }
+    #textarea_container_inner {
+        width: 100%;
+    }
+}
+
