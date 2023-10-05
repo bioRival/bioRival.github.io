@@ -302,7 +302,7 @@ textarea::placeholder {
     #title_picture {
         width: 95%;
     }
-    #textarea_container_inner {
+    .textarea_container_inner {
         width: 100%;
     }
 }
@@ -311,7 +311,7 @@ textarea::placeholder {
     #title_picture {
         width: 95%;
     }
-    #textarea_container_inner {
+    .textarea_container_inner {
         width: 100%;
     }
 }
