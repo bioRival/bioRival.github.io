@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ask Sans</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+        <img id="title_picture" src="img/title-rus.png" alt="КОМИК САНС" />
+    </header>
+    <main>
+        <div id="talk_bubble_container">
+            <div class="talk_bubble talk_bubble-bottom-left">
+                Неужели ты не знаешь как приветствовать нового приятеля? 
+            </div>
+        </div>
+        <img id="sans_picture" src="img/sans.png" alt="Sans the Skeleton" />
+        <div class="textarea_container">
+            <div class="textarea_container_inner">
+                <textarea name="textarea_text" placeholder="Какой-то текст..."></textarea>
+                <button class="send_button" title="Отослать" 
+                    onclick='send_button_click()'></button>
+            </div>
+            <!-- Finisher gag elements - invisible -->
+            <div class="arena remove_from_page"></div>
+            <!-- End of Finisher gag elements - invisible -->
+            <hr class="hr_white_line" />
+        </div>
+        <div id="mic_container">
+            <button class="mic_button_base mic_button" 
+                    id="mic"
+                    title="Написать голосом" 
+                    type="submit"
+                    onclick="mic_button_click()"></button>
+            <!-- Finisher gag elements - invisible -->
+            <div class="health_bar remove_from_page"></div>
+            <div class="fake_buttons_container remove_from_page">
+                <button class="fake_button btn_fight"></button>
+                <button class="fake_button btn_act"></button>
+                <button class="fake_button btn_item"></button>
+                <button class="fake_button btn_mercy"></button>
+            </div>
+            <!-- End of Finisher gag elements - invisible -->
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="row">
+            <a href="https://github.com/bioRival" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.youtube.com/channel/UCm45y1vwoy1OKPTgtCBI0TA"
+            target="_blank"><i class="fa fa-youtube-play"></i></a>
+            <a href="https://t.me/biorival" target="_blank"><i class="fa fa-telegram"></i></a>
+        </div>
+        
+        <!-- <div class="row">
+            <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Career</a></li>
+            </ul>
+        </div> -->
+        
+        <div class="row">
+            Created by bioRival © 2023 bioRival - All rights unreserved
+        </div>
+    </footer>
+	<script src="js/script.js"></script>
+  </body>
+</html>
