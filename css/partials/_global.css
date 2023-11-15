@@ -1,0 +1,42 @@
+html {
+    font-family: var(--neutral-face); /* default font */
+}
+
+h1, h2, h3, h4 {
+    color: black;
+    text-transform: uppercase;
+}
+
+/* Clearing default styling for links - such as blue color or underline */
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: inherit; 
+    text-decoration: inherit; 
+}
+
+
+
+
+
+/* Often used titles */
+.mini-title {
+    font-family: Neutral Face;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+/* Often used paragraph style */
+.para {
+    color: #2E2C2C;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
