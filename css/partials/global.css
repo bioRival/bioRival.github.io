@@ -40,3 +40,11 @@ a:hover {
     font-weight: 500;
     line-height: normal;
 }
+
+/* Ink Stain before the footer, note: must be inside MAIN tag to work */
+.footer-ink-stain {
+    height: 915px;
+    margin-top: -915px;
+
+    background: url(/img/footer-ink-stain.png) no-repeat;
+}

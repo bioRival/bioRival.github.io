@@ -231,6 +231,7 @@
 .site-main .chat-bot-area .chat-bot-bottom-text {
     text-align: right;
     padding-top: 11rem;
+    padding-bottom: 20rem;
 }
 
 .site-main .chat-bot-area .chat-bot-bottom-text .chat-bot-para {
@@ -252,12 +253,12 @@
     min-height: 10rem;
 }
 
-.footer-ink-stain {
+/* .footer-ink-stain {
     background: url(../img/footer-ink-stain.png) no-repeat;
     background-size: 100%;
     background-position: bottom;
     min-height: 50rem;
-}
+} */
 
 .footer-area .youtube-link {
     height: 15.5rem;
@@ -437,23 +438,284 @@
 /* ========================================================================= */
 /* ========================================================================= */
 /* ========================================================================= */
-.banner-area .banner {
+
+/* Banner Area */
+/* ========================================================================= */
+.site-main .banner-area .banner {
     width: 100%;
     height: 50rem;
+    padding: 0 10rem;
+
     background: url(../img/banner.jpg) #F2F2F2 no-repeat;
     background-position-x: center;
     background-size: 60rem;
 }
 
-.middle {
-    width: 100%;
+.site-main .banner-area .banner .banner-sub-counter {
+    display: block;
     height: 10rem;
-    background: black;
-    opacity: 0.7;
+    width: 15rem;
+    padding-top: 2rem;
+    margin: 2rem 0;
 
-    position: relative;
-    margin: -100px 0 0 0;
+    text-align: center;
+    line-height: 3rem;
 }
+
+.site-main .banner-area .banner .youtube-sub-counter {
+    background: url(../img/counter-vectors/vector-blue.png) no-repeat;
+    background-size: 100%;
+}
+
+.site-main .banner-area .banner .instagram-sub-counter {
+    background: url(../img/counter-vectors/vector-green.png) no-repeat;
+    background-size: 100%;
+}
+
+.site-main .banner-area .banner .vk-sub-counter {
+    background: url(../img/counter-vectors/vector-yellow.png) no-repeat;
+    background-size: 100%;
+}
+
+.site-main .banner-area .banner .banner-sub-counter .small-danger {
+    color: #000;
+    font-family: var(--danger);
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.site-main .banner-area .banner .banner-sub-counter span {
+    color: #000;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.site-main .banner-area .banner .banner-greet h1 {
+    margin-top: 7rem;
+
+    color: #000;
+    font-family: var(--danger);
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    transform: rotate(5.101deg);
+}
+
+.site-main .banner-area .banner .banner-greet .banner-under-greet {
+    margin-top: 2rem;
+
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 2.85769rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    transform: rotate(-6.344deg);
+}
+/* ========================================================================= */
+/* End Banner Area */
+
+/* Banner Line Area */
+/* ========================================================================= */
+.site-main .banner-line-area .banner-line-top {
+    display: relative;
+    height: 81px;
+    margin-top: -81px;
+
+    background: url(../img/torn-gray-bg-top.png) no-repeat;
+}
+
+.site-main .banner-line-area .banner-line {
+    
+    height: 25rem;
+    padding: 5rem 0;
+    background: #1F1F1F;
+
+}
+
+.site-main .banner-line-area .banner-line .about-me-block {
+    margin: 0 auto;
+    width: 1320px;
+}
+
+.site-main .banner-line-area .banner-line .about-me-block p {
+    margin-right: 20rem;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.site-main .banner-line-area .banner-line .about-me-block h2 {
+    margin-top: 5rem;
+
+    color: #FFF;
+    text-align: right;
+    font-family: Inter;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.7rem;
+
+    transform: rotate(3.975deg);
+}
+
+.site-main .banner-line-area .banner-line-bottom {
+    display: relative;
+    height: 87px;
+
+    background: url(../img/torn-gray-bg-bottom.png) white no-repeat;
+}
+
+/* ========================================================================= */
+/* End Banner Line Area */
+
+
+/* Quiz Area */
+/* ========================================================================= */
+.site-main .quiz-area {
+    min-height: 70rem;
+    padding-top: 10rem;
+
+    background: url(../img/target-bg.png) repeat-y;
+    background-size: 1920px;
+    background-position-x: center;
+}
+
+.site-main .quiz-area .quiz-title p {
+    color: #000;
+    font-family: Inter;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.site-main .quiz-area .quiz-sub-title {
+    float: right;
+    padding-right: 12rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.site-main .quiz-area .quiz-sub-title h2 {
+    color: #000;
+    font-family: var(--danger);
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.site-main .quiz-area .quiz-question p {
+    color: #000;
+    font-family: Inter;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    text-align: center;
+}
+
+.site-main .quiz-area .quiz-choices {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-main .quiz-area .quiz-choices .choice-unit {
+    padding: 1rem;
+}
+
+.site-main .quiz-area .quiz-choices .choice-unit .choice-pic {
+    box-sizing: border-box;
+    height: 15rem;
+    width: 19rem;
+
+    margin-top: 1.5rem;
+    padding: 1rem 1rem;
+
+    background-color: #D9D9D9;
+    border-radius: 15px;
+}
+
+.site-main .quiz-area .quiz-choices .choice-unit .choice-text {
+    box-sizing: border-box;
+    height: 5rem;
+    width: 19rem;
+
+    margin-top: 1.5rem;
+    padding: 1.2rem .5rem;
+
+    background-color: #D9D9D9;
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+.site-main .quiz-area .quiz-choices .choice-unit .choice-text span {
+    color: #000;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+.site-main .quiz-area .quiz-result {
+    padding: 9rem 0 12rem 0;
+    text-align: right;
+}
+
+.site-main .quiz-area .quiz-result h1 {
+    margin-right: 16rem;
+
+    color: #000;
+    font-family: var(--danger);
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    transform: rotate(-0.888deg);
+}
+
+.site-main .quiz-area .quiz-result p {
+    margin-top: 4rem;
+
+    color: #000;
+    font-family: Inter;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    transform: rotate(-4.134deg);
+}
+/* ========================================================================= */
+/* End Quiz Area */
+
+
+
+
+
+
+
+
+
+
 
 .bottom {
     width: 100%;
