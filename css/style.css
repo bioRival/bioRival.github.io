@@ -88,6 +88,10 @@
     padding-top: 7rem;
 }
 
+.site-main .games-area .game-block .game-cover img {
+    display: none;
+}
+
 .site-main .games-area .game-title h3 {
     color: #2E2C2C;
     text-align: center;
@@ -95,11 +99,6 @@
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 115%; /* 1.725rem */
-}
-
-.site-main .games-area .game-title.active h3 {
-    font-weight: 700;
     line-height: 115%; /* 1.725rem */
 }
 
@@ -138,15 +137,23 @@
 	transition: all 0.3s ease;
 }
 
+.site-main .games-area .game-block .row:hover .play-button {
+    color: #6A6969;
+    background-color: #B9B7B7;
+}
+
+.site-main .games-area .game-block .row:hover .game-title h3 {
+    font-weight: 700;
+}
+
+.site-main .games-area .game-block .row:hover .game-cover img {
+    display: block;
+}
+
 .site-main .games-area .game-block .play-button:hover {
     color: #6A6969;
     background-color: #B9B7B7;
     box-shadow: var(--box-shadow);
-}
-
-.site-main .games-area .game-block .play-button.active {
-    color: #6A6969;
-    background-color: #B9B7B7;
 }
 /* ========================================================================= */
 /* End Games List Area */
@@ -253,14 +260,10 @@
     min-height: 10rem;
 }
 
-/* .footer-ink-stain {
-    background: url(../img/footer-ink-stain.png) no-repeat;
-    background-size: 100%;
-    background-position: bottom;
-    min-height: 50rem;
-} */
-
 .footer-area .youtube-link {
+    box-sizing: border-box;
+    border-radius: 50%;
+
     height: 15.5rem;
     width: 15.5rem;
 
@@ -272,6 +275,10 @@
     background: url(../img/5-rings/5-rings-green.png) no-repeat;
     background-size: 100%;
 
+    
+}
+
+.footer-area .youtube-link i {
     transform: rotate(-16.717deg);
 }
 
@@ -281,7 +288,7 @@
     margin-left: 50%;
 
     text-align: center;
-    line-height: 9.4rem;
+    line-height: 9.0rem;
     font-size: 4rem;
     color: white;
 
@@ -336,7 +343,7 @@
     margin-left: 30%;
 
     text-align: center;
-    line-height: 8.6rem;
+    line-height: 8.3rem;
     font-size: 4rem;
     color: white;
 
@@ -360,13 +367,17 @@
 }
 
 .pulse:hover {
-    transform: scale(1.5) 0.5s ease;
-    animation: pulse-white 1.5s infinite;
+    animation: pulse1 1.5s infinite;
 }
 
-@keyframes pulse-white {
+.pulse2:hover {
+    animation: pulse2 1.5s infinite;
+}
+
+@keyframes pulse1 {
 	0% {
 		transform: scale(1.5);
+        
 	}
 	
 	70% {
@@ -375,6 +386,23 @@
 	
 	100% {
 		transform: scale(1.5);
+        
+	}
+}
+
+@keyframes pulse2 {
+	0% {
+		transform: scale(1.0);
+        box-shadow: 0 0 0 0px rgba(139, 255, 72, 0.2);
+	}
+	
+	70% {
+		transform: scale(1.2);
+	}
+	
+	100% {
+		transform: scale(1.0);
+        box-shadow: 0 0 0 20px rgba(139, 255, 72, 0);
 	}
 }
 
