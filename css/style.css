@@ -377,7 +377,6 @@
 @keyframes pulse1 {
 	0% {
 		transform: scale(1.5);
-        
 	}
 	
 	70% {
@@ -386,7 +385,6 @@
 	
 	100% {
 		transform: scale(1.5);
-        
 	}
 }
 
@@ -680,11 +678,11 @@
 
 .site-main .quiz-area .quiz-choices .choice-unit .choice-text {
     box-sizing: border-box;
+    display: inline-flex;
     height: 5rem;
     width: 19rem;
 
     margin-top: 1.5rem;
-    padding: 1.2rem .5rem;
 
     background-color: #D9D9D9;
     border-radius: 15px;
@@ -692,15 +690,64 @@
     text-align: center;
 }
 
-.site-main .quiz-area .quiz-choices .choice-unit .choice-text span {
-    color: #000;
+/* Button for picking games style 1 */
+/* ================================ */
+.site-main .quiz-area .quiz-choices .choice-unit .choice-text .button-style1 {
+    flex: 1;
+    color: #206592;
     font-family: Inter;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    
+
+    position: relative;
+    border-radius: 15px;
+    text-transform: uppercase;
+    border: 1px solid #206592;
+    outline: none;
+    cursor: pointer;
+    background: white;
+    overflow: hidden;
+    transition: 0.6s;
 }
+
+.button-style1:before, .button-style1:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    filter: blur(30px);
+    opacity: 0.4;
+    transition: 0.6s;
+}
+
+.button-style1:before {
+    width: 60px;
+    background: rgba(255,255,255,0.6);
+    transform: translateX(-130px) skewX(-45deg);
+}
+
+.button-style1:after {
+    width: 30px;
+    background: rgba(255,255,255,0.6);
+    transform: translateX(-130px) skewX(-45deg);
+}
+
+.button-style1:hover:before,
+.button-style1:hover:after {
+    opacity: 0.6;
+    transform: translateX(320px) skewX(-45deg);
+}
+
+.button-style1:hover {
+    color: #f2f2f2 !important;
+    background: #206592 !important;
+}
+/* End Button for picking games style 1 */
+/* ================================ */
+
 
 .site-main .quiz-area .quiz-result {
     padding: 9rem 0 12rem 0;
