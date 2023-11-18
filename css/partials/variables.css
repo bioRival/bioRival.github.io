@@ -10,12 +10,12 @@ html, body {
 
 :root {
     --primary-color: #0059BD;
-    --primary-color2: #854fee;
+    --primary-color2: ;
     --title-color: #141313;
     --text-color: #777777;
     --border-color: #201f1f17;
-    --gradient-color: linear-gradient(336deg, rgba(0,89,189,1) 0%, rgba(59,152,242,1) 55%, rgba(0,89,189,1) 100%);
-    --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+    --bg-strong-color: #4d4d4d;
+    --bg-light-color: #bbb;
     --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
 
     /* font family variables */

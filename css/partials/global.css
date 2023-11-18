@@ -52,3 +52,39 @@ a:hover {
 
     background: url(/img/footer-ink-stain.png) no-repeat;
 }
+
+
+
+
+/* Emotions Emojis */
+.emotion-funny::before {
+    content: '🤣';
+}
+
+.emotion-cute::before {
+    content: '😙';
+}
+
+.emotion-sad::before {
+    content: '😟';
+}
+
+.emotion-sexy::before {
+    content: '🥴';
+}
+
+.emotion-scary::before {
+    content: '😱';
+}
+
+.emotion-awkward::before {
+    content: '😬';
+}
+
+.emotion-angry::before {
+    content: '😈';
+}
+
+.emotion-nostalgic::before {
+    content: '🧐';
+}
