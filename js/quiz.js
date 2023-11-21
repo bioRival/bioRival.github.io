@@ -183,7 +183,6 @@ function startTimer(time){
                 if(option_list.children[i].textContent == correcAns){ //if there is an option which is matched to an array answer
                     option_list.children[i].setAttribute("class", "option correct"); //adding green color to matched option
                     option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to matched option
-                    console.log("Время Вышло: Автоматически выбран правильный ответ.");
                 }
             }
             for(i=0; i < allOptions; i++){
@@ -207,7 +206,7 @@ function startTimerLine(time){
 
 function queCounter(index){
     //creating a new span tag and passing the question number and total question
-    let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Вопросы</span>';
+    let totalQueCounTag = '<span><p>'+ index +'</p> из <p>'+ questions.length +'</p> Вопросов</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
 
