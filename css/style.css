@@ -1109,6 +1109,10 @@
 
     transform: rotate(-4.134deg);
 }
+
+.site-main .quiz-area .quiz-main-container {
+    height: 26rem;
+}
 /* ========================================================================= */
 /* End Quiz Area */
 
