@@ -265,7 +265,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-between;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .site-main .youtube-area .youtube-container .mood-picker .mood-button {
@@ -321,10 +321,7 @@
 
     border: 1px solid var(--bg-light-color);
     border-radius: 20px;
-}
-
-.site-main .youtube-area .youtube-container .mood-picker-toggle .mood-text-button {
-    
+    outline: none;
 }
 
 .site-main .youtube-area .youtube-container .youtube-screen::before {
