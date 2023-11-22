@@ -1,82 +1,72 @@
 $( document ).ready(function() {
 
-    let IS_EMOTION_TEXT_VISIBLE = false;
-
-
-// Hides or Shows the Text next to Emojis when picking a video
-function toggleEmotionText() {
-    btn = $('.youtube-area .youtube-container .mood-picker .mood-button');
-    btn_text = $('.youtube-area .youtube-container .mood-picker .mood-button p');
-    btn_container = $('.youtube-area .youtube-container .mood-picker');
-    
-    if (!IS_EMOTION_TEXT_VISIBLE) {
-        btn_text.css('display', 'block');
-        btn.css('border-radius', '10px');
-        btn_container.css('justify-content', 'flex-start');
-        IS_EMOTION_TEXT_VISIBLE = true;
-    } else {
-        btn_text.css('display', 'none');
-        btn.css('border-radius', '50%');
-        btn_container.css('justify-content', 'space-between');
-        IS_EMOTION_TEXT_VISIBLE = false;
-    }
-    
-}
 
 
 
+// Emoji Buttons for picking a mood 
+// changes style based on choice, shows extra text
 function pickMood() {
-    function restoreDefault(IS_EMOTION_TEXT_VISIBLE) {
+    function restoreDefault() {
         btns = $('.youtube-area .youtube-container .mood-picker .mood-button');
         btns_text =$('.youtube-area .youtube-container .mood-picker .mood-button p');
-        if (IS_EMOTION_TEXT_VISIBLE) {
-            btns_text.css({
-                'color': 'rgb(192, 192, 192)'
-            });
-            btns.css({
-                'background-color': 'var(--bg-strong-color)',
-                'outline': 'none',
-            });
-        } else {
-            btns_text.css({
-                'display': 'none',
-                'color': 'rgb(192, 192, 192)',
-            });
-            btns.css({
-                'border-radius': '50%',
-                'background-color': 'var(--bg-strong-color)',
-                'outline': 'none',
-            });
-        }
+        
+        btns.removeClass('active');
+        btns_text.css({
+            'display': 'none',
+        });
+        btns.css({
+            'border-radius': '50%',
+        });
     }
 
-    restoreDefault(IS_EMOTION_TEXT_VISIBLE);
+    restoreDefault();
     
     btn = $(this);
     btn_text = btn.children('p');
-
-    btn.css({
-        'background-color': 'var(--bg-light-color)',
-        'outline': '2px solid var(--bg-strong-color)'
+    btn.addClass('active');
+    btn_text.addClass('active');
+    btn_text.css({
+        'display': 'block',
     });
-
-    if (IS_EMOTION_TEXT_VISIBLE) {
-        btn_text.css({
-            'color': 'black'
-        });
-    } else {
-        btn_text.css({
-            'display': 'block',
-            'color': 'black'
-        });
-        btn.css({
-            'border-radius': '10px'
-        });
-    }
+    btn.css({
+        'border-radius': '10px'
+    });
 
 }
 
+// Emoji Buttons under a video
+// change style based on user choice
+function rateVideo() {
+    btn = $(this);
+
+    if (btn.hasClass('active')) {
+        btn.removeClass('active');
+
+        let number = btn.children('span').text();
+        if (number === "") {number = 0}
+        number = Number(number);
+        number--;
+        if (number <= 0) {
+            btn.removeClass('rated');
+            number = "";
+        }
+        btn.children('span').text(number);
+
+        
+    } else {
+        btn.addClass('active');
+        btn.addClass('rated');
+
+        let number = btn.children('span').text();
+        if (number === "") {number = 0}
+        number = Number(number);
+        number++;
+        btn.children('span').text(number);
+    }
+    
+}
+
 $('.youtube-area .youtube-container .mood-picker .mood-button').click(pickMood);
-$('.youtube-area .youtube-container .mood-picker-toggle .mood-text-button').click(toggleEmotionText);
+$('.youtube-area .youtube-container .youtube-screen .rating .rating-item').click(rateVideo);
 });
 

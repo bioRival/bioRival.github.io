@@ -13,8 +13,10 @@ html, body {
     --primary-color2: ;
     --title-color: #141313;
     --text-color: #777777;
-    --border-color: #201f1f17;
+    --border-color: #201f1f;
     --bg-strong-color: #4d4d4d;
+    --bg-stronger-color: #1a1a1a;
+    --bg-active-color: #1f0101;
     --bg-light-color: #bbb;
     --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
 

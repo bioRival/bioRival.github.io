@@ -257,7 +257,7 @@
 /* Youtube Area */
 /* ========================================================================= */
 .site-main .youtube-area {
-    min-height: 100rem;
+    min-height: 130rem;
 }
 
 .site-main .youtube-area .youtube-container .mood-picker {
@@ -309,19 +309,17 @@
     outline: 2px solid var(--bg-strong-color);
 }
 
-.site-main .youtube-area .youtube-container .mood-picker .mood-button:hover p {
+.site-main .youtube-area .youtube-container .mood-picker .mood-button.active {
+    background-color: var(--bg-light-color);
+    outline: 2px solid var(--bg-strong-color);
+}
+
+.site-main .youtube-area .youtube-container .mood-picker .mood-button p.active {
     color: black;
 }
 
-.site-main .youtube-area .youtube-container .mood-picker-toggle .mood-text-button {
-    float: right;
-    background: transparent;
-
-    color: var(--bg-light-color);
-
-    border: 1px solid var(--bg-light-color);
-    border-radius: 20px;
-    outline: none;
+.site-main .youtube-area .youtube-container .mood-picker .mood-button:hover p {
+    color: black;
 }
 
 .site-main .youtube-area .youtube-container .youtube-screen::before {
@@ -337,14 +335,225 @@
 }
 
 .site-main .youtube-area .youtube-container .youtube-screen {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+
+    padding-top: .5rem;
+
+    background-color: var(--bg-strong-color);
+    border-radius: 10px;
 }
 
 .site-main .youtube-area .youtube-container .youtube-screen .youtube-iframe {
     border: 5px solid var(--bg-strong-color);
     width: 1110px;
     height: 624px;
+}
+
+.site-main .youtube-area .youtube-container .youtube-screen .rating {
+    padding: 0 .5rem .5rem .5rem;
+}
+
+.site-main .youtube-area .youtube-container .youtube-screen .rating .rating-item {
+    display: inline-flex;
+    justify-content: flex-start;
+    vertical-align: middle;
+
+    padding: .6rem;
+
+    background-color: var(--bg-stronger-color);
+    opacity: .5;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    color: white;
+    text-align: right;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+    transition: background .5s ease;
+}
+
+.site-main .youtube-area .youtube-container .youtube-screen .rating .rating-item.rated {
+    opacity: 1;
+}
+
+.site-main .youtube-area .youtube-container .youtube-screen .rating .rating-item.active {
+    background-color: var(--bg-active-color);
+    outline: 1px solid #e74646;
+    color: #f17c7c;
+
+}
+
+.site-main .youtube-area .youtube-container .youtube-screen .rating .rating-item:hover {
+    opacity: 1;
+    background-color: var(--bg-active-color);
+    outline: 1px solid #e74646;
+    color: #f17c7c;
+}
+
+.site-main .youtube-area .youtube-container .under-video .video-pick {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.site-main .youtube-area .youtube-container .under-video .video-pick .video-item {
+    margin: .5rem;
+    padding: .5rem;
+    width: 340px;
+    background-color: var(--bg-strong-color);
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: all .4s ease;
+}
+
+.site-main .youtube-area .youtube-container .under-video .video-pick .video-item:hover {
+    box-shadow: var(--box-shadow);
+    transform: scale(1.2);
+    background-color: var(--bg-stronger-color);
+}
+
+.site-main .youtube-area .youtube-container .under-video .video-pick .video-item img {
+    border-radius: 10px;
+    border: 2px solid var(--border-color);
+}
+
+.site-main .youtube-area .youtube-container .under-video .video-pick .video-item h4 {
+    color: white;
+    text-align: left;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.site-main .youtube-area .youtube-container .under-video .video-pick .video-item 
+.sub-rating {
+    padding: .2rem 0 .2rem 0;
+}
+
+.site-main .youtube-area .youtube-container .under-video .video-pick .video-item 
+.sub-rating .rating-item {
+    display: inline-flex;
+    justify-content: flex-start;
+    vertical-align: middle;
+
+    padding: .4rem;
+
+    opacity: .8;
+    background-color: var(--bg-stronger-color);
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    color: white;
+    text-align: right;
+    font-family: Inter;
+    font-size: .8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+    transition: background .5s ease;
+}
+
+.site-main .youtube-area .youtube-container .under-video
+.snack-pick {
+    width: 100%;
+    background-color: var(--bg-strong-color);
+    border-radius: 10px;
+}
+
+.site-main .youtube-area .youtube-container .under-video
+.snack-pick h2 {
+    color: white;
+    text-align: center;
+    font-family: var(--danger);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.site-main .youtube-area .youtube-container .under-video
+.snack-pick h3 {
+    background-color: var(--bg-stronger-color);
+    width: 100%;
+
+    color: white;
+    text-align: center;
+    font-family: Inter;
+    font-size: .5rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+.site-main .youtube-area .youtube-container .under-video
+.snack-pick .snack-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.site-main .youtube-area .youtube-container .under-video
+.snack-pick .snack-container .snack {
+    width: 90%;
+    margin: .5rem;
+    padding: .5rem .5rem 0rem .5rem;
+    background-color: var(--bg-stronger-color);
+    border-radius: 10px;
+}
+
+.site-main .youtube-area .youtube-container .under-video
+.snack-pick .snack-container .snack img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.site-main .youtube-area .youtube-container .under-video
+.snack-pick .snack-container .snack h4 {
+    color: whitesmoke;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: .1rem;
+    text-transform: uppercase;
+}
+
+.site-main .youtube-area .youtube-container .under-video
+.snack-pick .snack-container .snack p {
+    color: #5a5a5a;
+    text-align: left;
+    font-family: Inter;
+    font-size: .8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 /* ========================================================================= */
 /* Youtube Area */
@@ -1131,15 +1340,15 @@
 /* UNIMPLEMENTED */
 
 /* List of videos Area */
-.site-main .video-pick-area .thumbnail-image {
+.site-main .under-video .video-pick-area .thumbnail-image {
     padding: 1rem;
 }
 
-.site-main .video-pick-area .thumbnail-image > img {
+.site-main .under-video .video-pick-area .thumbnail-image > img {
     transition: transform .4s ease;
 }
 
-.site-main .video-pick-area .thumbnail-image > img:hover {
+.site-main .under-video .video-pick-area .thumbnail-image > img:hover {
     filter:brightness(1.1);
     box-shadow: var(--box-shadow);
     transform: scale(1.1);
