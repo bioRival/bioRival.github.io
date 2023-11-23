@@ -20,11 +20,12 @@
 /* Navigation Area */
 /* ========================================================================= */
 .header-area .main-menu {
-    background-color: #EE61D6;
+    background-color: #CECECE;
 }
 
 .header-area .main-menu .menu-title {
     display: inline-flex;
+    padding-left: 2.3rem;
 }
 
 .header-area .main-menu .menu-title .pleasant-title {
@@ -39,9 +40,13 @@
     top: -1.5rem;
     z-index: 0;
 
-    cursor: default;
-
     color: #D22E12;
+    text-align: center;
+    font-family: Monument Extended;
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;;
     text-align: center;
     font-family: Monument Extended;
     font-size: 8rem;
@@ -49,6 +54,7 @@
     font-weight: 800;
     line-height: normal;
     text-transform: uppercase;
+    user-select: none;
 }
 
 .header-area .main-menu .menu-title .ildar-title {
@@ -60,8 +66,6 @@
 .header-area .main-menu .menu-title .ildar-title h1 {
     position: absolute;
     top: -1.5rem;
-    
-    cursor: default;
 
     color: rgba(255, 255, 255, 0.25);
     text-align: center;
@@ -70,6 +74,7 @@
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    user-select: none;
 }
 
 .header-area .main-menu .menu-container {
@@ -109,10 +114,12 @@
 
 .header-area .main-menu .menu-container .navbar .navbar-nav .nav-item.active .nav-link {
     color: #D22E12;
+    text-decoration: underline;
 }
 
 .header-area .main-menu .menu-container .side-menu {
     display: inline-flex;
+    align-items: flex-start;
     position: relative;
     z-index: 1;
     margin-top: -1rem;
@@ -128,7 +135,7 @@
 }
 
 .header-area .main-menu .menu-container .side-menu a:hover {
-    color: #ffb1fb;
+    color: #D22E12;
 }
 /* ========================================================================= */
 /* End Navigation Area */
@@ -860,8 +867,6 @@
 }
 
 .footer-area .marquee-area .marquee {
-    overflow: hidden;
-
     color: #000;
     font-family: Inter;
     font-size: 2rem;
@@ -874,33 +879,11 @@
 
     transform: skewY(-4deg);
 }
-  
-.footer-area .marquee-area .marquee__inner {
-    display: flex;
-}
 
-.footer-area .marquee-area .marquee__line {
-    flex-shrink: 0;
-    margin: 0;
+.footer-area .marquee-area .marquee .marquee__line {
     padding: 1.5rem 1rem;
-    min-width: 100%;
-    white-space: nowrap;
-    /* animation-name: marqueeLine;
-    /* animation-duration: 5s;
-    animation-timing-function: ease-in-out; */
-    /* animation-iteration-count: infinite;  */
-    animation: marqueeLine 20s linear infinite;
 }
 
-@keyframes marqueeLine {
-    from {
-        transform: translateX(0);
-    }
-    
-    to {
-        transform: translateX(-100%);
-    }
-}
 
 /* ========================================================================= */
 /* End Footer Area */
@@ -1399,6 +1382,89 @@
 /* ========================================================================= */
 /* END ABOUT ME PAGE */
 
+
+
+
+
+
+
+
+/* MERCH PAGE */
+/* ========================================================================= */
+/* ========================================================================= */
+/* ========================================================================= */
+
+/* Sub-menu Area */
+/* ========================================================================= */
+.site-main .sub-menu-area {
+    background-color: #000;
+}
+
+.site-main .sub-menu-area .yellow-line-wrapper {
+    position: relative;
+    top: 0; right: 0;
+    display: inline-block;
+    width: 10rem;
+    height: 1rem;
+}
+
+.site-main .sub-menu-area .yellow-line-wrapper .marquee-merch-yellow {
+    position: absolute;
+    top: 62.9rem;
+    right: -61.3rem;
+    z-index: 99;
+
+    width: 133rem;
+    transform: rotate(90deg);
+    padding: 1rem 0rem;
+    overflow: hidden;
+
+    color: #000;
+    text-align: center;
+    font-family: Druk Cyr;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    user-select: none;
+
+    background: #F9ED5B;
+}
+
+.site-main .sub-menu-area .yellow-line-wrapper .marquee-merch-yellow span {
+    font-family: Futura-Bold;
+}
+
+.site-main .sub-menu-area .sub-menu-nav {
+    display: inline-block;
+    padding: .8rem 0 0 3rem;
+
+    color: #FFF;
+    font-family: Futura PT Cond;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    letter-spacing: 0.3rem;
+}
+
+.site-main .sub-menu-area .sub-menu-nav {
+    user-select: none;
+}
+
+.site-main .sub-menu-area .sub-menu-nav a:hover {
+    color:#D22E12;
+}
+
+
+/* ========================================================================= */
+/* End Sub-menu Area */
+
+/* ========================================================================= */
+/* ========================================================================= */
+/* ========================================================================= */
+/* END MERCH PAGE */
 
 
 

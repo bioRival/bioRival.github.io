@@ -55,3 +55,17 @@
     font-weight: 900;
     font-style: normal;
 }
+
+@font-face {
+    font-family: "Futura-Bold";
+    src: url(../fonts/Futura-Bold.otf) format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Futura PT Cond";
+    src: url(../fonts/futura-condensed-pt/futura-condensed-pt-medium.otf) format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}

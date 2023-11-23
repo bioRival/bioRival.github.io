@@ -66,6 +66,24 @@ function rateVideo() {
     
 }
 
+
+// Marquee line of merch page yellow vertical
+$('.marquee-merch-yellow').marquee({
+    //duration in milliseconds of the marquee
+	duration: 150000,
+	//gap in pixels between the tickers
+	gap: 0,
+	//time in milliseconds before the marquee will start animating
+	delayBeforeStart: 0,
+	//'left' or 'right'
+	direction: 'left',
+	//true or false - should the marquee be duplicated to show an effect of continues flow
+	duplicated: true,
+    startVisible: true,
+});
+
+
+
 $('.youtube-area .youtube-container .mood-picker .mood-button').click(pickMood);
 $('.youtube-area .youtube-container .youtube-screen .rating .rating-item').click(rateVideo);
 });
