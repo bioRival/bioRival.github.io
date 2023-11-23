@@ -19,45 +19,116 @@
 
 /* Navigation Area */
 /* ========================================================================= */
-.header-area .main-menu .navbar {
-    /* display: inline-flex; */
-    padding: 1.25rem 20rem;
-    justify-content: flex-end;
-    align-items: center;
-    padding-left: 20rem;
-    background-color: #F6F6F6;
+.header-area .main-menu {
+    background-color: #EE61D6;
 }
 
-.header-area .main-menu .navbar .navbar-nav .nav-item .nav-link {
-    padding: 0 1rem;
+.header-area .main-menu .menu-title {
+    display: inline-flex;
+}
 
-    color: #000;
-    font-family: var(--neutral-face);
-    font-size: 1rem;
+.header-area .main-menu .menu-title .pleasant-title {
+    position: relative;
+
+    height: 4rem;
+    width: 60rem;
+}
+
+.header-area .main-menu .menu-title .pleasant-title h1 {
+    position: absolute;
+    top: -1.5rem;
+    z-index: 0;
+
+    cursor: default;
+
+    color: #D22E12;
+    text-align: center;
+    font-family: Monument Extended;
+    font-size: 8rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.header-area .main-menu .menu-title .ildar-title {
+    position: relative;
+
+    height: 4rem;
+}
+
+.header-area .main-menu .menu-title .ildar-title h1 {
+    position: absolute;
+    top: -1.5rem;
+    
+    cursor: default;
+
+    color: rgba(255, 255, 255, 0.25);
+    text-align: center;
+    font-family: Monument Extended;
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.header-area .main-menu .menu-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+    width: 100%;
+}
+
+.header-area .main-menu .menu-container .navbar {
+    display: flex;
+    padding: 1.5rem 1rem 1rem 10rem;
+    justify-content: space-between;
+    vertical-align: top;
+    flex-wrap: nowrap;
+
+}
+
+.header-area .main-menu .menu-container .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0 1.5rem;
+
+    color: #FFF;
+    font-family: Druk Cyr;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 1000;
     line-height: normal;
     letter-spacing: 0.02rem;
     text-transform: uppercase;
     transition: all 0.4s ease;
 }
 
-.header-area .main-menu .navbar .navbar-nav .nav-item .nav-link:hover {
-    color: #5197e6;
+.header-area .main-menu .menu-container .navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #D22E12;
 }
 
-.header-area .main-menu .navbar .navbar-nav .nav-item.active .nav-link {
-    color: var(--primary-color);
+.header-area .main-menu .menu-container .navbar .navbar-nav .nav-item.active .nav-link {
+    color: #D22E12;
 }
 
-.header-area .main-menu .navbar .profile-icon {
-    display: flex;
-    padding: 0.7rem;
-    justify-content: center;
-    align-items: center;
-    align-self: stretch;
-    
-    cursor: pointer;
+.header-area .main-menu .menu-container .side-menu {
+    display: inline-flex;
+    position: relative;
+    z-index: 1;
+    margin-top: -1rem;
+    padding-right: 4rem;
+
+    color: white;
+}
+
+.header-area .main-menu .menu-container .side-menu a {
+    padding: 0 .8rem 0 .8rem;
+
+    transition: color .5s ease;
+}
+
+.header-area .main-menu .menu-container .side-menu a:hover {
+    color: #ffb1fb;
 }
 /* ========================================================================= */
 /* End Navigation Area */
