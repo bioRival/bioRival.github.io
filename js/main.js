@@ -68,7 +68,7 @@ function rateVideo() {
 
 
 // Marquee line of merch page yellow vertical
-$('.marquee-merch-yellow').marquee({
+$('.site-main .sub-menu-area .yellow-line-wrapper .marquee-merch-yellow').marquee({
     //duration in milliseconds of the marquee
 	duration: 150000,
 	//gap in pixels between the tickers
@@ -82,6 +82,21 @@ $('.marquee-merch-yellow').marquee({
     startVisible: true,
 });
 
+
+// Marquee line of merch page red horizontal on background
+$('.site-main .merch-area .red-line-wrapper .marquee-merch-red').marquee({
+    //duration in milliseconds of the marquee
+	duration: 20000,
+	//gap in pixels between the tickers
+	gap: 0,
+	//time in milliseconds before the marquee will start animating
+	delayBeforeStart: 0,
+	//'left' or 'right'
+	direction: 'right',
+	//true or false - should the marquee be duplicated to show an effect of continues flow
+	duplicated: true,
+    startVisible: true,
+});
 
 
 $('.youtube-area .youtube-container .mood-picker .mood-button').click(pickMood);
