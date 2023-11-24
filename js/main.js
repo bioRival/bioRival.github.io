@@ -98,6 +98,28 @@ $('.site-main .merch-area .red-line-wrapper .marquee-merch-red').marquee({
     startVisible: true,
 });
 
+// Favorite Button on Merch Page
+function addToFavorites() {
+    icon = $(this).children('i');
+    if (icon.hasClass('fa-regular')) {
+        icon.removeClass('fa-regular');
+        icon.addClass('active');
+        icon.addClass('fa-solid');
+        icon.addClass("fa-bounce");
+        setTimeout(function(){
+            icon.removeClass("fa-bounce");
+            }, 1000);
+    } else {
+        icon.removeClass('fa-solid');
+        icon.removeClass('active');
+        icon.addClass('fa-regular');
+        icon.addClass('fa-shake');
+        setTimeout(function(){
+            icon.removeClass("fa-shake");
+            }, 1000);
+    }
+}
+$('.site-main .merch-area .merch-list .merch-item .merch-photo-con .fav-button').click(addToFavorites);
 
 $('.youtube-area .youtube-container .mood-picker .mood-button').click(pickMood);
 $('.youtube-area .youtube-container .youtube-screen .rating .rating-item').click(rateVideo);

@@ -19,7 +19,18 @@ a {
 
 a:hover {
     color: inherit; 
-    text-decoration: inherit; 
+    text-decoration: inherit;
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 
