@@ -32,13 +32,15 @@
 
 .header-area .main-menu .menu-title .pleasant-title {
     position: absolute;
+    display: inline-block;
     top: 0rem; left: -.5rem;
     z-index: 0;
     margin-top: -.1rem;
 
-    height: 9.5rem;
+    height: 8.9rem;
     overflow: hidden;
 
+    /* background-color: green; */
     
 }
 
@@ -151,497 +153,148 @@
 
 /* Faces Area */
 /* ========================================================================= */
-.site-main .container-fluid {
-    padding: 0;
-}
-
 .site-main .faces-area {
-    width: 100%;
+    /* min-height: 50rem; */
 }
 
-.site-main .faces-area .faces-images img {
-    width: 100%;
+.site-main .faces-area .faces-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    background-color: var(--black-color);
 }
+
+.site-main .faces-area .faces-list .face-item {
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/faces/face-default.png);
+    background-size: 100%;
+    
+    border: 2px solid var(--black-color);
+    /* transition: background .3s ease; */
+}
+
+.site-main .faces-area .faces-list #face01:hover {
+    background-image: url(../img/faces/face01.gif);
+}
+
+.site-main .faces-area .faces-list #face02:hover {
+    background-image: url(../img/faces/face02.gif);
+}
+
+.site-main .faces-area .faces-list #face03:hover {
+    background-image: url(../img/faces/face03.gif);
+}
+
+.site-main .faces-area .faces-list #face04:hover {
+    background-image: url(../img/faces/face04.gif);
+}
+
+.site-main .faces-area .faces-list #face05:hover {
+    background-image: url(../img/faces/face05.gif);
+}
+
+.site-main .faces-area .faces-list #face06:hover {
+    background-image: url(../img/faces/face06.gif);
+}
+
+.site-main .faces-area .faces-list #face07:hover {
+    background-image: url(../img/faces/face07.gif);
+}
+
+.site-main .faces-area .faces-list #face08:hover {
+    background-image: url(../img/faces/face08.gif);
+}
+
+.site-main .faces-area .faces-list #face09:hover {
+    background-image: url(../img/faces/face09.gif);
+}
+
+.site-main .faces-area .faces-list #face10:hover {
+    background-image: url(../img/faces/face10.gif);
+}
+
+.site-main .faces-area .faces-list #face11:hover {
+    background-image: url(../img/faces/face11.gif);
+}
+
+.site-main .faces-area .faces-list #face12:hover {
+    background-image: url(../img/faces/face12.gif);
+}
+
+.site-main .faces-area .faces-list #face13:hover {
+    background-image: url(../img/faces/face13.gif);
+}
+
+.site-main .faces-area .faces-list #face14:hover {
+    background-image: url(../img/faces/face14.gif);
+}
+
+.site-main .faces-area .faces-list #face15:hover {
+    background-image: url(../img/faces/face15.gif);
+}
+
+.site-main .faces-area .faces-list #face16:hover {
+    background-image: url(../img/faces/face16.gif);
+}
+
+.site-main .faces-area .faces-list #face17:hover {
+    background-image: url(../img/faces/face17.gif);
+}
+
+.site-main .faces-area .faces-list #face18:hover {
+    background-image: url(../img/faces/face18.gif);
+}
+
 /* ========================================================================= */
 /* End Faces Area */
 
 
 
+/* Hello Area */
+/* ========================================================================= */
+.site-main .hello-area .hello-con {
+    text-align: right;
+
+    background-color: var(--black-color);
+}
+
+.site-main .hello-area .hello-con h1 {
+    display: inline-block;
+    height: 11rem;
+    padding-top: .5rem;
+    padding-right: 8rem;
+
+    
+    color: var(--red-color);
+    font-family: Druk Cyr;
+    font-size: 14.5rem;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 9.5rem;
+    overflow: hidden;
+    user-select: none;
+
+    transform: scale(1.5, 1);
+}
+/* ========================================================================= */
+/* End Hello Area */
+
+
+
+
 /* Games List Area */
 /* ========================================================================= */
-.site-main .games-area {
-    padding-top: 7rem;
-}
 
-.site-main .games-area .game-block .game-cover img {
-    display: none;
-}
-
-.site-main .games-area .game-title h3 {
-    color: #2E2C2C;
-    text-align: center;
-    font-family: Neutral Face;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 115%; /* 1.725rem */
-}
-
-.site-main .games-area .game-block {
-    padding: 3rem 0;
-}
-
-.site-main .games-area .game-block .col-game {
-    /* border:1px solid #B9B7B7; */
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.site-main .games-area .game-block .game-cover > img {
-    width:100%;
-}
-
-.site-main .games-area .game-block .play-button {
-    box-sizing: border-box;
-	display:block;
-	width:80px;
-	height:80px;
-	padding-top: 6px;
-	padding-left: 15px;
-	line-height: 20px;
-	border: 1px solid #B9B7B7;
-	border-radius: 50%;
-	color: #B9B7B7;
-	text-align:center;
-	text-decoration:none;
-	background-color: transparent;
-	font-size: 15px;
-	font-weight:bold;
-	transition: all 0.3s ease;
-}
-
-.site-main .games-area .game-block .row:hover .play-button {
-    color: #6A6969;
-    background-color: #B9B7B7;
-}
-
-.site-main .games-area .game-block .row:hover .game-title h3 {
-    font-weight: 700;
-}
-
-.site-main .games-area .game-block .row:hover .game-cover img {
-    display: block;
-}
-
-.site-main .games-area .game-block .play-button:hover {
-    color: #6A6969;
-    background-color: #B9B7B7;
-    box-shadow: var(--box-shadow);
-}
 /* ========================================================================= */
 /* End Games List Area */
 
 /* Chat-bot Area */
 /* ========================================================================= */
-.site-main .chat-bot-area {
-    padding-top: 8rem;
-}
 
-.site-main .chat-bot-area .emotion-block .emotions .dot {
-    display: inline-block;
-    height: 4.5rem;
-    width: 4.5rem;
-    background-color: #bbb;
-    border-radius: 50%;
-}
-
-.site-main .chat-bot-area .emotion-block .emotions {
-    padding-top: 3rem;
-}
-
-.site-main .chat-bot-area .emotion-block .emotions .dot + .dot {
-    margin-left: .5rem;
-}
-
-.site-main .chat-bot-area .chat-bot-button {
-    box-sizing: border-box;
-	display: block;
-    float: right;
-	width: 13.6rem;
-	height: 13.6rem;
-
-    padding: 0;
-    padding-left: .45rem;
-    margin-bottom: 5rem;
-
-	border: 4px solid #0059BD;
-	border-radius: 50%;
-	text-align:center;
-	background-color: transparent;
-	transition: all 0.3s ease;
-}
-
-.site-main .chat-bot-area .chat-bot-button > div {
-    box-sizing: border-box;
-	display: block;
-
-    padding: 0;
-    padding-left: .7rem;
-    padding-top: .7rem;
-
-	width: 12.1rem;
-	height: 12.1rem;
-	border: 4px solid #D6D2D2;
-	border-radius: 50%;
-	text-align:center;
-	background-color: transparent;
-}
-
-.site-main .chat-bot-area .chat-bot-button > div > div {
-    box-sizing: border-box;
-	display: block;
-
-	width: 10.3rem;
-	height: 10.3rem;
-	border: 4px solid #000;
-	border-radius: 50%;
-	text-align:center;
-    line-height: 10.3rem; 
-	background-color: transparent;
-}
-
-.site-main .chat-bot-area .chat-bot-button .chat-bot-button-text {
-    color: #000;
-    font-family: var(--neutral-face);
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-}
-
-.site-main .chat-bot-area .chat-bot-bottom-text {
-    text-align: right;
-    padding-top: 11rem;
-    padding-bottom: 20rem;
-}
-
-.site-main .chat-bot-area .chat-bot-bottom-text .chat-bot-para {
-    color: #000;
-    text-align: right;
-    font-family: Inter;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
 /* ========================================================================= */
 /* End Chat-bot Area */
-
-
-/* Youtube Area */
-/* ========================================================================= */
-.site-main .youtube-area {
-    min-height: 130rem;
-}
-
-.site-main .youtube-area .youtube-container .mood-picker {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-between;
-}
-
-.site-main .youtube-area .youtube-container .mood-picker .mood-button {
-    border: none;
-    padding: .5rem;
-    margin: 0rem .3rem .5rem .3rem;
-
-    background-color: var(--bg-strong-color);
-    border-radius: 50%;
-}
-
-.site-main .youtube-area .youtube-container .mood-picker .mood-button .mood-emoji {
-    display: inline;
-
-    font-size: 3rem;
-    width: 4.3rem;
-    height: 4.3rem;
-
-    text-align: center;
-    line-height: normal;
-}
-
-.site-main .youtube-area .youtube-container .mood-picker .mood-button p {
-    display: none;
-    float: right;
-    margin: 1.5rem .5rem 0rem .3rem;
-
-    color: rgb(192, 192, 192);
-    text-align: right;
-    font-family: Inter;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-.site-main .youtube-area .youtube-container .mood-picker .mood-button:hover {
-    background-color: var(--bg-light-color);
-    transition: background .5s ease;
-    outline: 2px solid var(--bg-strong-color);
-}
-
-.site-main .youtube-area .youtube-container .mood-picker .mood-button.active {
-    background-color: var(--bg-light-color);
-    outline: 2px solid var(--bg-strong-color);
-}
-
-.site-main .youtube-area .youtube-container .mood-picker .mood-button p.active {
-    color: black;
-}
-
-.site-main .youtube-area .youtube-container .mood-picker .mood-button:hover p {
-    color: black;
-}
-
-.site-main .youtube-area .youtube-container .youtube-screen::before {
-    display: block;
-    content: '';
-
-    height: 1rem;
-    width: 100%;
-    
-    background-color: var(--bg-strong-color);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.site-main .youtube-area .youtube-container .youtube-screen {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-
-    padding-top: .5rem;
-
-    background-color: var(--bg-strong-color);
-    border-radius: 10px;
-}
-
-.site-main .youtube-area .youtube-container .youtube-screen .youtube-iframe {
-    border: 5px solid var(--bg-strong-color);
-    width: 1110px;
-    height: 624px;
-}
-
-.site-main .youtube-area .youtube-container .youtube-screen .rating {
-    padding: 0 .5rem .5rem .5rem;
-}
-
-.site-main .youtube-area .youtube-container .youtube-screen .rating .rating-item {
-    display: inline-flex;
-    justify-content: flex-start;
-    vertical-align: middle;
-
-    padding: .6rem;
-
-    background-color: var(--bg-stronger-color);
-    opacity: .5;
-    border-radius: 25px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-
-    color: white;
-    text-align: right;
-    font-family: Inter;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-
-    transition: background .5s ease;
-}
-
-.site-main .youtube-area .youtube-container .youtube-screen .rating .rating-item.rated {
-    opacity: 1;
-}
-
-.site-main .youtube-area .youtube-container .youtube-screen .rating .rating-item.active {
-    background-color: var(--bg-active-color);
-    outline: 1px solid #e74646;
-    color: #f17c7c;
-
-}
-
-.site-main .youtube-area .youtube-container .youtube-screen .rating .rating-item:hover {
-    opacity: 1;
-    background-color: var(--bg-active-color);
-    outline: 1px solid #e74646;
-    color: #f17c7c;
-}
-
-.site-main .youtube-area .youtube-container .under-video .video-pick {
-    display: flex;
-    justify-content: space-between;
-    vertical-align: middle;
-    align-content: flex-start;
-    flex-wrap: wrap;
-}
-
-.site-main .youtube-area .youtube-container .under-video .video-pick .video-item {
-    margin: .5rem;
-    padding: .5rem;
-    width: 340px;
-    background-color: var(--bg-strong-color);
-    border-radius: 10px;
-    cursor: pointer;
-
-    transition: all .4s ease;
-}
-
-.site-main .youtube-area .youtube-container .under-video .video-pick .video-item:hover {
-    box-shadow: var(--box-shadow);
-    transform: scale(1.2);
-    background-color: var(--bg-stronger-color);
-}
-
-.site-main .youtube-area .youtube-container .under-video .video-pick .video-item img {
-    border-radius: 10px;
-    border: 2px solid var(--border-color);
-}
-
-.site-main .youtube-area .youtube-container .under-video .video-pick .video-item h4 {
-    color: white;
-    text-align: left;
-    font-family: Inter;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-.site-main .youtube-area .youtube-container .under-video .video-pick .video-item 
-.sub-rating {
-    padding: .2rem 0 .2rem 0;
-}
-
-.site-main .youtube-area .youtube-container .under-video .video-pick .video-item 
-.sub-rating .rating-item {
-    display: inline-flex;
-    justify-content: flex-start;
-    vertical-align: middle;
-
-    padding: .4rem;
-
-    opacity: .8;
-    background-color: var(--bg-stronger-color);
-    border-radius: 25px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-
-    color: white;
-    text-align: right;
-    font-family: Inter;
-    font-size: .8rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-
-    transition: background .5s ease;
-}
-
-.site-main .youtube-area .youtube-container .under-video
-.snack-pick {
-    width: 100%;
-    background-color: var(--bg-strong-color);
-    border-radius: 10px;
-}
-
-.site-main .youtube-area .youtube-container .under-video
-.snack-pick h2 {
-    color: white;
-    text-align: center;
-    font-family: var(--danger);
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: .5rem;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-.site-main .youtube-area .youtube-container .under-video
-.snack-pick h3 {
-    background-color: var(--bg-stronger-color);
-    width: 100%;
-
-    color: white;
-    text-align: center;
-    font-family: Inter;
-    font-size: .5rem;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: .5rem;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-
-.site-main .youtube-area .youtube-container .under-video
-.snack-pick .snack-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    vertical-align: middle;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
-.site-main .youtube-area .youtube-container .under-video
-.snack-pick .snack-container .snack {
-    width: 90%;
-    margin: .5rem;
-    padding: .5rem .5rem 0rem .5rem;
-    background-color: var(--bg-stronger-color);
-    border-radius: 10px;
-}
-
-.site-main .youtube-area .youtube-container .under-video
-.snack-pick .snack-container .snack img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.site-main .youtube-area .youtube-container .under-video
-.snack-pick .snack-container .snack h4 {
-    color: whitesmoke;
-    text-align: center;
-    font-family: Inter;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: .1rem;
-    text-transform: uppercase;
-}
-
-.site-main .youtube-area .youtube-container .under-video
-.snack-pick .snack-container .snack p {
-    color: #5a5a5a;
-    text-align: left;
-    font-family: Inter;
-    font-size: .8rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-/* ========================================================================= */
-/* Youtube Area */
 
 
 /* Footer Area */

@@ -37,6 +37,46 @@ button:focus {
 
 
 
+
+/* Containers */
+.pleasant-container-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.pleasant-col {
+    flex: 1000;
+    max-width: 1280px;
+}
+
+.pleasant-col-side {
+    flex: 1;
+}
+
+
+
+
+
+/* Background Colors */
+.bg-black {
+    background-color: var(--black-color);
+}
+
+.bg-gray {
+    background-color: var(--gray-color);
+}
+
+.bg-yellow {
+    background-color: var(--yellow-color);
+}
+
+
+
+
+
+
 /* Often used titles */
 .mini-title {
     font-family: Neutral Face;
@@ -54,14 +94,6 @@ button:focus {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-}
-
-/* Ink Stain before the footer, note: must be inside MAIN tag to work */
-.footer-ink-stain {
-    height: 915px;
-    margin-top: -915px;
-
-    background: url(/img/footer-ink-stain.png) no-repeat;
 }
 
 

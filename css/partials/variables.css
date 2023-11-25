@@ -9,6 +9,29 @@ html, body {
 /* CSS VARIABLES */
 
 :root {
+    /* UI-kit */
+    /*   Colors */
+    --black-color: #050505;
+    --gray-color: #CECECE;
+    --red-color: #D23111;
+    --pink-color: #F162D8;
+    --yellow-color: #FAED5B;
+
+    /*   Effects */
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+
+    /*   Fonts */
+    --danger: "Another Danger Slanted";
+    --monument: "Monument Extended";
+    --druk: "Druk Cyr";
+    --futura-bold: "Futura-Bold";
+    --futura-pt-cond: "Futura PT Cond";
+    --futura-demi-c: "FuturaDemiC";
+    --futura-pt-cond-medium-italic: "Futura PT Cond Medium Italic";
+
+
+
+    /* Scrapped */
     --primary-color: #0059BD;
     --primary-color2: ;
     --title-color: #141313;
@@ -18,12 +41,8 @@ html, body {
     --bg-stronger-color: #1a1a1a;
     --bg-active-color: #1f0101;
     --bg-light-color: #bbb;
-    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
 
-    /* font family variables */
-    --roboto: "Roboto", cursive;
+    /* font family scrapped */
     --neutral-face: "Neutral Face";
-    --danger: "Another Danger Slanted";
-    --monument: "Monument Extended";
-    --druk: "Druk Cyr";
+
 }
