@@ -36,7 +36,7 @@ button:focus {
 }
 
 
-
+/* Making Header appear on top no matter what */
 header {
     position: relative;
     z-index: 99;
@@ -47,6 +47,15 @@ header {
 
 
 /* Containers */
+/* ========================================================================= */
+.pleasant-container {
+    display: block;
+    margin: 0 auto;
+
+    width: 1280px;
+}
+
+/* Flex Container to allow different bg colors on right and left */
 .pleasant-container-flex {
     display: flex;
     flex-direction: row;
@@ -65,6 +74,31 @@ header {
 
 
 
+/* Quotes Style */
+.quote-container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.quote-angles {
+    display: flex;
+    align-items: center;
+    padding: 0 .5rem;
+    color: white;
+    font-size: 3rem;
+}
+
+.quote-text {
+    color: black;
+    text-align: left;
+    font-family: Futura PT Cond;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.25rem;
+}
+/* ========================================================================= */
+/* End Containers */
 
 
 /* Background Colors */

@@ -262,6 +262,7 @@
 
 .site-main .hello-area .hello-con h1 {
     display: inline-block;
+    position: relative;
     height: 11rem;
     padding-top: .5rem;
     padding-right: 8rem;
@@ -278,10 +279,88 @@
 
     transform: scale(1.5, 1);
 }
+
+.site-main .hello-area .hello-con .hello-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.site-main .hello-area .hello-con .hello-wrapper .pink-smile {
+    display: block;
+    position: absolute;
+    top: 6rem; left: -21rem;
+
+    width: 14.625rem;
+    height: 14.75rem;
+    background-image: url(../img/pink-smile.png);
+}
+
+.site-main .hello-area .hello-con .quote-container {
+    padding: 3.3rem 0;
+}
+
+.site-main .hello-area .hello-con .quote-container .quote-angles {
+    color: white;
+}
+
+.site-main .hello-area .hello-con .quote-container .quote-text {
+    width: 20rem;
+    color: var(--pink-color);
+}
 /* ========================================================================= */
 /* End Hello Area */
 
 
+/* Mood Banner Area */
+/* ========================================================================= */
+.site-main .mood-banner-area {
+    background-color: var(--red-color);
+}
+
+.site-main .mood-banner-area .quote-container {
+    padding: 0 1.8rem 1.5rem 0;
+}
+
+.site-main .mood-banner-area .quote-container .quote-text {
+    color: white;
+}
+
+.site-main .mood-banner-area .quote-container .quote-text {
+    width: 28rem;
+    color: var(--black-color);
+}
+/* ========================================================================= */
+/* End Mood Banner Area */
+
+
+/* Chat-bot Area */
+/* ========================================================================= */
+.site-main .chat-bot-area {
+
+}
+
+.site-main .chat-bot-area .emotion-pick-container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 15rem;
+}
+
+.site-main .chat-bot-area .emotion-pick-container .emotion-pick-item
+.emotion-pick-button {
+    width: 7rem;
+    height: 7rem;
+
+    cursor: pointer;
+    
+    background-color: var(--red-color);
+
+    border-radius: 50%;
+}
+/* ========================================================================= */
+/* End Chat-bot Area */
 
 
 /* Games List Area */
@@ -290,11 +369,7 @@
 /* ========================================================================= */
 /* End Games List Area */
 
-/* Chat-bot Area */
-/* ========================================================================= */
 
-/* ========================================================================= */
-/* End Chat-bot Area */
 
 
 /* Footer Area */
