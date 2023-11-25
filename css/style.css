@@ -1072,7 +1072,7 @@
     position: absolute;
     top: 62.9rem;
     right: -61.3rem;
-    z-index: 99;
+    z-index: 3;
 
     width: 133rem;
     transform: rotate(90deg);

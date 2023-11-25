@@ -35,6 +35,12 @@ button:focus {
 
 
 
+header {
+    position: relative;
+    z-index: 99;
+}
+
+
 
 
 
