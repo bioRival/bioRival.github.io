@@ -10,7 +10,9 @@ h1, h2, h3, h4 {
     color: black;
     text-transform: uppercase;
 }
-
+.container-fluid {
+    padding: 0;
+}
 /* Clearing default styling for links - such as blue color or underline */
 a {
     color: inherit;
