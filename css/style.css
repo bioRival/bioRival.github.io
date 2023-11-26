@@ -160,13 +160,13 @@
 .site-main .faces-area .faces-list {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: start;
 
-    background-color: var(--black-color);
+    background-color: var(--gray-color);
 }
 
 .site-main .faces-area .faces-list .face-item {
-    width: 200px;
+    width: 210px;
     height: 200px;
     background-image: url(../img/faces/face-default.png);
     background-size: 100%;
@@ -260,35 +260,18 @@
     background-color: var(--black-color);
 }
 
-.site-main .hello-area .hello-con h1 {
-    display: inline-block;
-    position: relative;
-    height: 11rem;
-    padding-top: .5rem;
-    padding-right: 8rem;
-
-    
-    color: var(--red-color);
-    font-family: Druk Cyr;
-    font-size: 14.5rem;
-    font-style: normal;
-    font-weight: 1000;
-    line-height: 9.5rem;
-    overflow: hidden;
-    user-select: none;
-
-    transform: scale(1.5, 1);
-}
-
 .site-main .hello-area .hello-con .hello-wrapper {
     display: inline-block;
     position: relative;
+    padding-top: .5rem;
+    padding-right: 1.2rem;
 }
 
 .site-main .hello-area .hello-con .hello-wrapper .pink-smile {
     display: block;
     position: absolute;
-    top: 6rem; left: -21rem;
+
+    top: 7rem; left: -10rem;
 
     width: 14.625rem;
     height: 14.75rem;
@@ -1221,18 +1204,10 @@
     background-color: #000;
 }
 
-.site-main .sub-menu-area .yellow-line-wrapper {
-    position: relative;
-    top: 0; right: 0;
-    display: inline-block;
-    width: 10rem;
-    height: 1rem;
-}
-
-.site-main .sub-menu-area .yellow-line-wrapper .marquee-merch-yellow {
+.site-main .sub-menu-area .marquee-merch-yellow {
     position: absolute;
-    top: 62.9rem;
-    right: -61.3rem;
+    top: 5rem;
+    left: -62.1rem;
     z-index: 3;
 
     width: 133rem;
@@ -1259,7 +1234,7 @@
 
 .site-main .sub-menu-area .sub-menu-nav {
     display: inline-block;
-    padding: .8rem 0 0 3rem;
+    padding: .8rem 0 0 10rem;
 
     color: #FFF;
     font-family: Futura PT Cond;

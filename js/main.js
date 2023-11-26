@@ -102,7 +102,7 @@ function rateVideo() {
 
 
 // Marquee line of merch page yellow vertical
-$('.site-main .sub-menu-area .yellow-line-wrapper .marquee-merch-yellow').marquee({
+$('.site-main .sub-menu-area .marquee-merch-yellow').marquee({
     //duration in milliseconds of the marquee
 	duration: 150000,
 	//gap in pixels between the tickers
