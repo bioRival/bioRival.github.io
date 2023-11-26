@@ -1,8 +1,42 @@
 $( document ).ready(function() {
+// GLOBAL
+// =============================================================
+
+// Toggles Class on an element
+// has optional clearClass parameter - string of jquery selector, clears all active classes
+//   in that selector 
+function toggleActive(event) {
+    btn = $(this);
+
+    if (typeof event.data.clearClass !== 'undefined') {
+        $(event.data.clearClass).removeClass('active');
+        btn.addClass('active');
+    } else {
+        if (btn.hasClass('active')) {
+            btn.removeClass('active');
+        } else {
+            btn.addClass('active');
+        }
+    }
+}
+$('.site-main .chat-bot-area .emotion-pick-container .emotion-pick-item .emotion-pick-button').click({
+    clearClass: '.site-main .chat-bot-area .emotion-pick-container .emotion-pick-item .emotion-pick-button',
+}, toggleActive);
+// =============================================================
+// END GLOBAL
+
+// MAIN PAGE
+// =============================================================
+
+// =============================================================
+// END MAIN PAGE
 
 
 
 
+
+
+// OTHER
 // Emoji Buttons for picking a mood 
 // changes style based on choice, shows extra text
 function pickMood() {

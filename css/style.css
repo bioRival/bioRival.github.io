@@ -350,6 +350,9 @@
 
 .site-main .chat-bot-area .emotion-pick-container .emotion-pick-item
 .emotion-pick-button {
+    position: relative;
+    z-index: 2;
+
     width: 7rem;
     height: 7rem;
 
@@ -358,7 +361,90 @@
     background-color: var(--red-color);
 
     border-radius: 50%;
+
+    transition: background 1s ease;
+
+    
 }
+
+.site-main .chat-bot-area .emotion-pick-container .emotion-pick-item
+.emotion-pick-button img {
+    transition: transform .5s ease;
+}
+
+.site-main .chat-bot-area .emotion-pick-container .emotion-pick-item
+.emotion-pick-button:hover {
+    background-color: var(--black-color);
+}
+
+.site-main .chat-bot-area .emotion-pick-container .emotion-pick-item
+.emotion-pick-button:hover img {
+    transform: scale(0.8);
+}
+
+.site-main .chat-bot-area .emotion-pick-container .emotion-pick-item
+.emotion-pick-button::before {
+    content: attr(tooltip);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    padding: 3px 10px;
+    opacity: 0;
+    pointer-events: auto;
+    background: #fff;
+    
+    color: black;
+    text-align: center;
+    font-family: Futura PT Cond;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    transition: all 0.3s ease-out;
+}
+
+.site-main .chat-bot-area .emotion-pick-container .emotion-pick-item
+.emotion-pick-button::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 0;
+    opacity: 0;
+    background: #fff;
+    transform: rotate(45deg);
+    left: 20%;
+    z-index: -2;
+    transition: 
+    all 0.3s ease-out;
+}
+
+.site-main .chat-bot-area .emotion-pick-container .emotion-pick-item
+.emotion-pick-button:hover::before {
+    top: -45px;
+    opacity: 1;
+}
+
+.site-main .chat-bot-area .emotion-pick-container .emotion-pick-item
+.emotion-pick-button:hover::after {
+    top: -12px;
+    opacity: 1;
+}
+
+.site-main .chat-bot-area .emotion-pick-container .emotion-pick-item
+.emotion-pick-button.active {
+    background-color: var(--black-color);
+}
+
+.site-main .chat-bot-area .emotion-pick-container .emotion-pick-item
+.emotion-pick-button.active img {
+    transform: scale(0.8);
+}
+
+
 /* ========================================================================= */
 /* End Chat-bot Area */
 
