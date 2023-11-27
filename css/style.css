@@ -318,16 +318,14 @@
 
 /* Chat-bot Area */
 /* ========================================================================= */
-.site-main .chat-bot-area {
 
-}
-
+/* Mood Pick sub-area */
+/* ========================== */
 .site-main .chat-bot-area .emotion-pick-container {
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: space-around;
-
     height: 15rem;
 }
 
@@ -342,12 +340,9 @@
     cursor: pointer;
     
     background-color: var(--red-color);
-
     border-radius: 50%;
 
     transition: background 1s ease;
-
-    
 }
 
 .site-main .chat-bot-area .emotion-pick-container .emotion-pick-item
@@ -426,7 +421,85 @@
 .emotion-pick-button.active img {
     transform: scale(0.8);
 }
+/* ========================== */
+/* End Mood Pick subarea */
 
+/* Chat Bot Introduction subarea */
+/* ========================== */
+.site-main .chat-bot-area .chat-bot-intro {
+    padding-top: 3rem;
+    height: 57.8rem;
+
+    background-color: var(--red-color);
+}
+
+.site-main .chat-bot-area .chat-bot-intro .top-banner-container {
+    width: 61rem;
+    background-color: var(--pink-color);
+}
+
+.site-main .chat-bot-area .chat-bot-intro .top-banner-container .top-banner-text-con {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 58rem;
+    margin-top: -10rem;
+    margin-bottom: 10rem;
+
+    font-family: Futura PT Cond Medium Italic;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.125rem; /* 104.167% */
+    text-transform: uppercase;
+}
+
+.site-main .chat-bot-area .chat-bot-intro .top-banner-container .top-banner-text-con 
+.top-banner-text-yellow {
+    flex: 1;
+    padding: .3rem 1rem;
+
+    text-align: right;
+    color: var(--black-color);
+
+    background-color: var(--yellow-color);
+}
+
+.site-main .chat-bot-area .chat-bot-intro .top-banner-container .top-banner-text-con 
+.top-banner-text-red {
+    flex: 2;
+    padding: .3rem 1rem;
+
+    text-align: left;
+    color: var(--white-color);
+
+    background-color: var(--red-color);
+}
+
+.site-main .chat-bot-area .chat-bot-intro .top-banner-container
+.tob-banner-sub-text {
+    padding: 2rem 0 3.5rem 5.2rem;
+    background-color: green;
+
+    color: var(--white-color);
+    font-family: Futura PT Cond Medium Italic;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.125rem; /* 104.167% */
+
+    transform: rotate(-3deg);
+}
+
+.site-main .chat-bot-area .chat-bot-intro .top-banner-container
+.tob-banner-sub-text span {
+    color: var(--black-color);
+    font-family: var(--danger);
+    letter-spacing: 0.21rem;
+}
+
+
+/* ========================== */
+/* End Chat Bot Introduction subarea */
 
 /* ========================================================================= */
 /* End Chat-bot Area */
